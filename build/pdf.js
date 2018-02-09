@@ -19,6 +19,8 @@
  * @licend The above is the entire license notice for the
  * Javascript code in this page
  */
+var Canvas = require("canvas-prebuilt");
+global.Image = Canvas.Image;
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -14753,7 +14755,7 @@ var CanvasGraphics = function CanvasGraphicsClosure() {
           d = currentTransform[3];
       var heightScale = Math.max(Math.sqrt(c * c + d * d), 1);
       var imgToPaint, tmpCanvas;
-      if (imgData instanceof HTMLElement || !imgData.data) {
+      if ((typeof HTMLElement !== 'undefined' && imgData instanceof HTMLElement) || !imgData.data) {
         imgToPaint = imgData;
       } else {
         tmpCanvas = this.cachedCanvases.getCanvas('inlineImage', width, height);

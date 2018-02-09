@@ -1,5 +1,5 @@
 {
-  "name": "pdfjs-dist",
+  "name": "pdfjs-dist-fork",
   "version": "2.0.338",
   "main": "build/pdf.js",
   "description": "Generic build of Mozilla's PDF.js library.",
@@ -12,6 +12,7 @@
   "bugs": "https://github.com/mozilla/pdf.js/issues",
   "license": "Apache-2.0",
   "dependencies": {
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
     "node-ensure": "^0.0.0",
     "worker-loader": "^1.1.0"
   },
@@ -27,6 +28,6 @@
   "format": "amd",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mozilla/pdfjs-dist"
+    "url": "https://github.com/dnivra26/pdfjs-dist"
   }
 }
