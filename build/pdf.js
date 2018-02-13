@@ -19,8 +19,9 @@
  * @licend The above is the entire license notice for the
  * Javascript code in this page
  */
-var Canvas = require("canvas");
+var Canvas = require("canvas-prebuilt");
 global.Image = Canvas.Image;
+global.Canvas = Canvas;
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')

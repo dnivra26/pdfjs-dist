@@ -1,6 +1,6 @@
 {
   "name": "pdfjs-dist-fork",
-  "version": "2.0.338",
+  "version": "2.0.343",
   "main": "build/pdf.js",
   "description": "Generic build of Mozilla's PDF.js library.",
   "keywords": [
